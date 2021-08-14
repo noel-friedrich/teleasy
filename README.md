@@ -3,7 +3,6 @@
 
 ## Table of contents
 * [Example](#example)
-* [Screenshots](#screenshots)
 * [Setup](#setup)
 * [Tutorial](#tutorial)
 * [Status](#status)
@@ -29,6 +28,7 @@ bot.set_command("dialogue", dialogue_command)
 
 bot.start()
 ```
+![Telegram-Chat](https://github.com/noel-friedrich/teleasy/blob/7e1d6d457c0a1bb01cfed4a17b40d4de1979abb2/screenshots/example.PNG "chat")
 
 ## Setup
 
@@ -79,6 +79,7 @@ bot.start()
 # and it's ready to go! Feel free to copy this code and test it out with your
 # API-TOKEN! It should reply to normal messages with "Hello World!"
 ```
+![Telegram-Chat](https://github.com/noel-friedrich/teleasy/blob/7e1d6d457c0a1bb01cfed4a17b40d4de1979abb2/screenshots/example1.PNG "chat")
 ### command handlers
 
 ```python
@@ -90,7 +91,7 @@ def help_command_handler(info: UpdateInfo):
 # now we need to tell the bot to use the handler when it receives a 'help' command
 bot.set_command("help", help_command_handler)
 ```
-
+![Telegram-Chat](https://github.com/noel-friedrich/teleasy/blob/7e1d6d457c0a1bb01cfed4a17b40d4de1979abb2/screenshots/helpfunction.PNG "chat")
 ### user input
 
 ```python
@@ -108,7 +109,7 @@ bot.set_command("dialogue", dialogue_command)
 # now we need to tell the bot to use the handler when it receives a 'help' command
 bot.set_command("help", help_command_handler)
 ```
-
+![Telegram-Chat](https://github.com/noel-friedrich/teleasy/blob/7e1d6d457c0a1bb01cfed4a17b40d4de1979abb2/screenshots/dialogue.PNG "chat")
 ### the UpdateInfo object
 
 ```python
@@ -195,10 +196,7 @@ bot.set_command("quiz", quiz_command)
 # start the telegram bot
 bot.start()
 ```
-
-## Screenshots
-![Example screenshot](https://github.com/noel-friedrich/neural/blob/main/neural2884.PNG "Tkinter Visualization of Neural Network")
-
+![Telegram-Chat](https://github.com/noel-friedrich/teleasy/blob/7e1d6d457c0a1bb01cfed4a17b40d4de1979abb2/screenshots/quiz.PNG "chat")
 ## Status
 Project is _IN PROGRESS_  
 _todo list in PROJECT: __Neural Network maker___  
