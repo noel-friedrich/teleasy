@@ -1,2 +1,2 @@
 # teleasy
-The easiest telegram-bot-api library out there (for python)
+> Library for creating telegram bots. It's really this simple.
