@@ -198,9 +198,4 @@ bot.start()
 ```
 ![Telegram-Chat](https://github.com/noel-friedrich/teleasy/blob/7e1d6d457c0a1bb01cfed4a17b40d4de1979abb2/screenshots/quiz.PNG "chat")
 ## Status
-Project is _IN PROGRESS_  
-_todo list in PROJECT: __Neural Network maker___  
-https://github.com/noel-friedrich/neural/projects/1
-
-## Credits
-Training Algorithm Code was heavily inspired by https://machinelearningmastery.com/implement-backpropagation-algorithm-scratch-python/
+Project is _IN PROGRESS_
