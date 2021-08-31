@@ -1,5 +1,5 @@
 # teleasy _1.0.1_
-> Creating Telegram Bots made simple
+> Creating Telegram Bots Made Simple
 
 ## Table of contents
 * [Example](#example)
