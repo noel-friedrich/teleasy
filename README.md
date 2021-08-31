@@ -1,4 +1,4 @@
-# teleasy _1.0.1_
+# teleasy _1.0.2_
 > Creating Telegram Bots Made Simple
 
 ## Table of contents
