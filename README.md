@@ -34,6 +34,7 @@ bot.start()
 
 ```
 pip install teleasy
+pip3 install teleasy
 ```
 ```
 python3 -m pip install teleasy
@@ -110,26 +111,6 @@ bot.set_command("dialogue", dialogue_command)
 bot.set_command("help", help_command_handler)
 ```
 ![Telegram-Chat](https://github.com/noel-friedrich/teleasy/blob/7e1d6d457c0a1bb01cfed4a17b40d4de1979abb2/screenshots/dialogue.PNG "chat")
-### the UpdateInfo object
-
-```python
-UpdateInfo.message_id: str # message id of the message that caused the function to run
-UpdateInfo.username: str # username of the sender of the message (may be hidden due to privacy setting)
-UpdateInfo.text: str # the text of the message it received
-UpdateInfo.first_name # first name of sender
-UpdateInfo.date: str # date of message send that caused the update
-UpdateInfo.chat_id: str # unique identification of the chat the message was sent in
-UpdateInfo.from_bot: bool # True if sender is bot, else False
-UpdateInfo.send_message(chat_id, msg) # function to send message to any user using the chat_id
-UpdateInfo.respond(msg) # function to respond to the message 
-UpdateInfo.input(msg, timeout=30) # function to get user input similar to inbuilt 'input()'
-                                  # timeout will be called after specified seconds
-UpdateInfo.get_answer(msg, timeout=30) # same as UpdateInfo.input
-UpdateInfo.stop_thread() # function to stop any existing threads, should only be used in cancel command handler
-UpdateInfo.wait(seconds, typing=False) # similar to time.sleep(seconds), will display "typing" for the user while the bot waits
-UpdateInfo.select(message, options) # takes in message and list(str) as options, will display them as buttons and return chosen one
-UpdateInfo.user_data: teleasy.UserData # UserData object, similar to dictionary, will always be the same for the same user for information to be stored in
-```
 
 ## Status
 Project is _IN PROGRESS_
