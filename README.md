@@ -4,7 +4,8 @@
 ## Table of contents
 * [Example](#example)
 * [Setup](#setup)
-* [Tutorial](#tutorial)
+* [Wiki](https://github.com/noel-friedrich/teleasy/wiki)
+* [Introduction](#introduction)
 * [Status](#status)
 
 ## Example
@@ -30,6 +31,8 @@ bot.start()
 ```
 ![Telegram-Chat](https://github.com/noel-friedrich/teleasy/blob/7e1d6d457c0a1bb01cfed4a17b40d4de1979abb2/screenshots/example.PNG "chat")
 
+> See [Examples-Folder](https://github.com/noel-friedrich/teleasy/tree/main/examples) for more
+
 ## Setup
 
 ```
@@ -50,7 +53,8 @@ telegram_bot = teleasy.TelegramBot
 update_info = teleasy.UpdateInfo
 ```
 
-## Tutorial
+## Introduction
+
 ```python
 # first import the relevant classes
 from teleasy import TelegramBot, UpdateInfo
