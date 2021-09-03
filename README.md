@@ -1,4 +1,4 @@
-# teleasy _1.0.3_
+# teleasy _1.0.4_
 > Creating Telegram Bots Made Simple  
 > [PyPi Page](https://pypi.org/project/teleasy)
 
