@@ -1,4 +1,4 @@
-# teleasy _1.0.4_
+# teleasy _2.0.2_
 > Creating Telegram Bots Made Simple  
 > [PyPi Page](https://pypi.org/project/teleasy)
 
@@ -106,7 +106,8 @@ def dialogue_command_handler(chat: ChatInstance):
 ![Telegram-Chat](https://github.com/noel-friedrich/teleasy/blob/7e1d6d457c0a1bb01cfed4a17b40d4de1979abb2/screenshots/dialogue.PNG "chat")
 
 ## Status
-Project is _IN PROGRESS_
+Project is _IN PROGRESS_  
+Project is currently in its _BETA_
 
 ## License
 This project is licensed under the terms of the MIT license.
