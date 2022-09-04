@@ -46,8 +46,6 @@ from teleasy import TelegramBot, UpdateInfo
 # or just do
 import teleasy
 # and access the classes from the 'teleasy' object directly
-telegram_bot = teleasy.TelegramBot
-update_info = teleasy.UpdateInfo
 ```
 > see [Installation Help \(Wiki\)](https://github.com/noel-friedrich/teleasy/wiki#installation-help) for more Help
 
