@@ -1,11 +1,11 @@
 # an example of a full implementation of a quiz-bot
 
 ```python
-# import TelegramBot and UpdateInfo Object
-from bot import TelegramBot, UpdateInfo
+# import TelegramBot and ChatInstance Object
+from teleasy import TelegramBot, ChatInstance
 
 # insert your bot token here
-TOKEN = <YOUR_BOT_TOKEN> (str)
+TOKEN = "2125143963:AAGzdnKFp9XKPcZgXiHGfPZz2XEAY8egigI"
 
 # define quiz questions as dict
 quiz = {
@@ -31,34 +31,37 @@ quiz = {
     }
 }
 
-def quiz_command(info: UpdateInfo) -> str:
-    # initiate the quiz with a short message informing the user
-    info.respond("You have initiated the Quiz! Let's go!")
+# initialize the telegram bot
+bot = TelegramBot(TOKEN)
 
-    # prepare count of score, which will be incremented if 
-    # the user answers a question correctly
+@bot.on_normal_message
+def normal_message(chat: ChatInstance):
+    chat.print("hi! Use /quiz to play the quiz!")
+
+@bot.on_command("/start")
+def start_command(chat: ChatInstance):
+    chat.print("Welcome to the quiz bot!")
+    chat.print("Use /quiz to start the quiz")
+
+@bot.on_command("/quiz")
+def quiz_command(chat: ChatInstance):
+    chat.print("You have initiated the Quiz! Let's go!")
+
     score_count = 0
 
-    # iterate through all the quiz questions
     for question, answers_dict in quiz.items():
-        # get answer options from the iterator "answers_dict"
+
         answer_options = list(answers_dict.keys())
-        # use the info.select method to prompt the user the options
-        # the info.select method returns the chosen answer
-        answer = info.select(question, answer_options, columns=2)
+        # use the chat.select method to prompt the user the options
+        # the chat.select method returns the chosen answer
+        answer = chat.select(question, answer_options, columns=2)
         # if the chosen answer is true
         if answers_dict[answer] is True:
             # increment the score count
             score_count += 1
     
-    # same as info.respond("...")
+    # same as chat.print(*args)
     return f"Finished!\nYour Score: {score_count}/{len(quiz)}"
-
-# initialize the telegram bot
-bot = TelegramBot(TOKEN)
-
-# set a command handler to listen to command "quiz"
-bot.set_command("quiz", quiz_command)
 
 # start the telegram bot
 bot.start()
