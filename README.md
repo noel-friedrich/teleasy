@@ -8,6 +8,7 @@
 * [Wiki](https://github.com/noel-friedrich/teleasy/wiki)
 * [Introduction](#introduction)
 * [Status](#status)
+* [Lisence](#lisence)
 
 ## Example
 ```python
@@ -106,3 +107,6 @@ def dialogue_command_handler(chat: ChatInstance):
 
 ## Status
 Project is _IN PROGRESS_
+
+## License
+This project is licensed under the terms of the MIT license.
