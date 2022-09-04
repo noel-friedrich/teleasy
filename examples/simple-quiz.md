@@ -5,7 +5,7 @@
 from teleasy import TelegramBot, ChatInstance
 
 # insert your bot token here
-TOKEN = "2125143963:AAGzdnKFp9XKPcZgXiHGfPZz2XEAY8egigI"
+TOKEN = "0123456789:ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghi"
 
 # define quiz questions as dict
 quiz = {
