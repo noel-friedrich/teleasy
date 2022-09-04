@@ -8,7 +8,7 @@
 * [Wiki](https://github.com/noel-friedrich/teleasy/wiki)
 * [Introduction](#introduction)
 * [Status](#status)
-* [Lisence](#lisence)
+* [License](#license)
 
 ## Example
 ```python
